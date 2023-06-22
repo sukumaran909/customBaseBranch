@@ -9,4 +9,4 @@ jobs:
     
     steps:
     - name: Checking the content of Secret...
-      run: echo ${{secrets.MINATO1}}
+      run: echo ${{ secrets.MINATO1 }}
