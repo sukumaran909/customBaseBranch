@@ -10,3 +10,4 @@ jobs:
     steps:
     - name: Checking the content of Secret...
       run: echo ${{SECRETS.minato1}}
+      run: echo "Exiting...."
