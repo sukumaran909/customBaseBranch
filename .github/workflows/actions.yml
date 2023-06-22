@@ -9,6 +9,7 @@ jobs:
     
     steps:
     - name: Checking the content of Secret...
-      run: |
-        echo ${{ secrets.MINATO1 }}
-        echo ${{secrets.MINATO1}} | sed 's/./& /g' 
+      env:
+        value1: ${{ secrets.MINATO1 }}
+      if: env.value1 == 'minato'
+      run: "Found the key"
