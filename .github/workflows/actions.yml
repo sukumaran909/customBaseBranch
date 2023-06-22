@@ -17,3 +17,6 @@ jobs:
     - name: Checking == ...
       if: env.value1 == 'minato'
       run: echo "Ggg"
+    
+    - name: Checking the bash ...
+      run: which bash
