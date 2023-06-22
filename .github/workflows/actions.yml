@@ -11,5 +11,5 @@ jobs:
     - name: Checking the content of Secret...
       env:
         value1: ${{ secrets.MINATO1 }}
-      if: env.value1 == 'minato1'
+      if: env.value1 == 'minato'
       run: echo "Found the key"
