@@ -6,10 +6,14 @@ on:
 jobs:
   first-job:
     runs-on: ubuntu-latest
+    env:
+        value1: ${{ secrets.MINATO1 }}
     
     steps:
-    - name: Checking the content of Secret...
-      env:
-        value1: ${{ secrets.MINATO1 }}
-      if: env.value1 == 'minato'
+    - name: Checking != ...
+      if: env.value1 != 'minato'
       run: echo "Found the key"
+    
+    - name: Checking == ...
+      if: env.value1 == 'minato'
+      run: echo "Ggg"
