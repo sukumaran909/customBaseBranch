@@ -3,6 +3,9 @@ name: Secret testing
 on:
   push
 
+env:
+  IMAGE_NAME: 'test'
+
 jobs:
   first-job:
     runs-on: ubuntu-latest
@@ -20,3 +23,6 @@ jobs:
     
     - name: Checking the bash ...
       run: which bash
+    
+    - name: Checking the env variable...
+      run: echo "Environment variable ${{env.IMAGE_NAME}}"
