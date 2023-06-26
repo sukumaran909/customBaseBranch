@@ -26,3 +26,6 @@ jobs:
     
     - name: Checking the env variable...
       run: echo "Environment variable $env.IMAGE_NAME"
+  
+    - name: Contains testing
+      run: echo github.ref
