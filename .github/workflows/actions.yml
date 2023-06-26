@@ -25,4 +25,4 @@ jobs:
       run: which bash
     
     - name: Checking the env variable...
-      run: echo "Environment variable ${{env.IMAGE_NAME}}"
+      run: echo "Environment variable $env.IMAGE_NAME"
