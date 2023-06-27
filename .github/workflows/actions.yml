@@ -31,4 +31,4 @@ jobs:
       run: echo github.ref
       
     - name: Commit sha
-      run: echo ${{GITHUB_SHA}}
+      run: echo ${GITHUB_SHA}
