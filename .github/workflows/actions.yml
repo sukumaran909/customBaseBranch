@@ -29,3 +29,6 @@ jobs:
   
     - name: Contains testing
       run: echo github.ref
+      
+    - name: Commit sha
+      run: echo ${{GITHUB_SHA}}
